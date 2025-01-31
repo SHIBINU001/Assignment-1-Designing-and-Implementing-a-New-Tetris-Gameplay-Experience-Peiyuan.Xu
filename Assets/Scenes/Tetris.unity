@@ -853,6 +853,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7292a85c8a1f7b46a78ad73a4a4aa6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tetrominoes:
+  - tetromino: 0
+    tile: {fileID: 11400000, guid: 1bc0751c41c16c943bb0faf78e5d88db, type: 2}
+  - tetromino: 3
+    tile: {fileID: 11400000, guid: 71ab71141c86d4247aa84fee9db20641, type: 2}
+  - tetromino: 5
+    tile: {fileID: 11400000, guid: 6d45cb91a351dfd4da6a90ed263c4e09, type: 2}
+  - tetromino: 1
+    tile: {fileID: 11400000, guid: 24626266f4d62ae4d8a9e907974e12ca, type: 2}
+  - tetromino: 2
+    tile: {fileID: 11400000, guid: 53281dc1b5d6418439b7c8fad01a778d, type: 2}
+  - tetromino: 4
+    tile: {fileID: 11400000, guid: 3b8262e5aaf91794fa82e4e6ee500c50, type: 2}
+  - tetromino: 6
+    tile: {fileID: 11400000, guid: 9297d46310d2cc042a6dd46ca7d951bf, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
