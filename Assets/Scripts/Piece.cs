@@ -1,7 +1,3 @@
-using System.Runtime.InteropServices;
-using UnityEngine;
-using UnityEngine;
-
 using UnityEngine;
 
 public class Piece : MonoBehaviour
