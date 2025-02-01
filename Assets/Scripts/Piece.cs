@@ -1,3 +1,5 @@
+using System.Runtime.InteropServices;
+using UnityEngine;
 using UnityEngine;
 
 using UnityEngine;
@@ -14,5 +16,13 @@ public class Piece : MonoBehaviour
         this.board = board;
         this.position = position;
         this.data = data;
+        if (this.cells == null)
+        {
+            this.cells = new Vector3Int[data.cells.Length];
+        }
+        for (int i = 0; i < cells.Length; i++)
+        {
+            cells[i] = (Vector3Int)data.cells[i];
+        }
     }
 }
