@@ -8,10 +8,10 @@ public class Board : MonoBehaviour
 
     private void Awake()
     {
-        this.tilemap = GetComponentInChildren<Tilemap>();
+        tilemap = GetComponentInChildren<Tilemap>();
         for (int i = 0; i < tetrominoes.Length; i++)
         {
-            this.tetrominoes[i].Initialize();
+            tetrominoes[i].Initialize();
         }
     }
 
