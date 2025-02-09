@@ -82,12 +82,6 @@ public class Piece : MonoBehaviour
         }
     }
 
-    private void Lock()
-    {
-        board.Set(this);
-        board.SpawnPiece();
-    }
-
 
     private void HardDrop()
     {
@@ -97,6 +91,15 @@ public class Piece : MonoBehaviour
         }
         Lock();
     }
+
+    private void Lock()
+    {
+        this.board.Set(this);
+        this.board.ClearLines();
+        this.board.SpawnPiece();
+    }
+
+
     private bool Move(Vector2Int translation)
     {
         Vector3Int newPosition = this.position;
