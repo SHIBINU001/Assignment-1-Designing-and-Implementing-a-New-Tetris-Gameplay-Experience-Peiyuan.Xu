@@ -18,7 +18,7 @@ public static class Data
         { Tetromino.U, new Vector2Int[] { new Vector2Int(0, 2), new Vector2Int( 3, 2), new Vector2Int(0, 1), new Vector2Int( 3, 1), new Vector2Int(0, 0), new Vector2Int(1, 0), new Vector2Int(2, 0), new Vector2Int(3, 0) } },
     };
 
-    private static readonly Vector2Int[,] WallKicksI = new Vector2Int[,] {
+    private static readonly Vector2Int[,] WallKicksIU = new Vector2Int[,] {
         { new Vector2Int(0, 0), new Vector2Int(-2, 0), new Vector2Int( 1, 0), new Vector2Int(-2,-1), new Vector2Int( 1, 2) },
         { new Vector2Int(0, 0), new Vector2Int( 2, 0), new Vector2Int(-1, 0), new Vector2Int( 2, 1), new Vector2Int(-1,-2) },
         { new Vector2Int(0, 0), new Vector2Int(-1, 0), new Vector2Int( 2, 0), new Vector2Int(-1, 2), new Vector2Int( 2,-1) },
@@ -29,7 +29,7 @@ public static class Data
         { new Vector2Int(0, 0), new Vector2Int(-1, 0), new Vector2Int( 2, 0), new Vector2Int(-1, 2), new Vector2Int( 2,-1) },
     };
 
-    private static readonly Vector2Int[,] WallKicksJLOSTU = new Vector2Int[,] {
+    private static readonly Vector2Int[,] WallKicksJLOST = new Vector2Int[,] {
         { new Vector2Int(0, 0), new Vector2Int(-1, 0), new Vector2Int(-1, 1), new Vector2Int(0,-2), new Vector2Int(-1,-2) },
         { new Vector2Int(0, 0), new Vector2Int( 1, 0), new Vector2Int( 1,-1), new Vector2Int(0, 2), new Vector2Int( 1, 2) },
         { new Vector2Int(0, 0), new Vector2Int( 1, 0), new Vector2Int( 1,-1), new Vector2Int(0, 2), new Vector2Int( 1, 2) },
@@ -42,13 +42,13 @@ public static class Data
 
     public static readonly Dictionary<Tetromino, Vector2Int[,]> WallKicks = new Dictionary<Tetromino, Vector2Int[,]>()
     {
-        { Tetromino.I, WallKicksI },
-        { Tetromino.J, WallKicksJLOSTU },
-        { Tetromino.L, WallKicksJLOSTU },
-        { Tetromino.O, WallKicksJLOSTU },
-        { Tetromino.S, WallKicksJLOSTU },
-        { Tetromino.T, WallKicksJLOSTU },
-        { Tetromino.U, WallKicksJLOSTU },
+        { Tetromino.I, WallKicksIU },
+        { Tetromino.J, WallKicksJLOST },
+        { Tetromino.L, WallKicksJLOST },
+        { Tetromino.O, WallKicksJLOST },
+        { Tetromino.S, WallKicksJLOST },
+        { Tetromino.T, WallKicksJLOST },
+        { Tetromino.U, WallKicksIU },
     };
 
 }
