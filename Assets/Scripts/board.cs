@@ -52,6 +52,8 @@ public class Board : MonoBehaviour
     public void GameOver()
     {
         tilemap.ClearAllTiles();
+
+        Time.timeScale = 0f;
         
     }
     public void Set(Piece piece)
